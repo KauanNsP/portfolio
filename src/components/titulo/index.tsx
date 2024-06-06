@@ -3,7 +3,7 @@ import { Titulo as TituloEstilo } from './styles'
 export type Props = {
   children: string
   // eslint-disable-next-line prettier/prettier
-  fontSize: number
+  fontSize?: number
 }
 
 const Titulo = (props: Props) => <TituloEstilo fontSize={props.fontSize}>{props.children}</TituloEstilo>
